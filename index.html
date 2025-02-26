@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <div id="orologio">00:00:00</div>
-    
-    <script>
-        
 
-        function aggiornaOrologio(){
+    <script>
+
+
+        function aggiornaOrologio() {
             let adesso = new Date();
-            let ora = String(adesso.getHours()).padStart(2,'0');
-            let minuti = String(adesso.getMinutes()).padStart(2,'0') ;
-            let secondi = String(adesso.getSeconds()).padStart(2,'0');
+            let ora = String(adesso.getHours()).padStart(2, '0');
+            let minuti = String(adesso.getMinutes()).padStart(2, '0');
+            let secondi = String(adesso.getSeconds()).padStart(2, '0');
             console.log(ora + ":" + minuti + ":" + secondi);
-            document.getElementById('orologio');
+            const orologio = document.getElementById('orologio');
             orologio.textContent = ora + ":" + minuti + ":" + secondi;
         }
 
-
-        setInterval(aggiornaOrologio,1000);
+        setInterval(aggiornaOrologio, 1000);
 
     </script>
 </body>
+
 </html>
+
+<style>
+    body {
+        text-align: center;
+        background-color: black;
+    }
+
+    #orologio {
+        color: white;
+        padding: 2%;
+        font-size: 15em;
+        font-family: "Play", serif;
+
+    }
+</style>
