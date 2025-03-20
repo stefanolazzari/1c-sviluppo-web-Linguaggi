@@ -19,17 +19,12 @@ for(let contatore = 0; contatore < 5;contatore++){
 }
 
 
-
-
 for (let index = 0; index < 20; index++) {
     let numeroCasualeDec = Math.random() * 100;
     let numeroCasualeArr = Math.floor(numeroCasualeDec);
     console.log(numeroCasualeArr);
     
 }
-
-
-
 
 let contenitore2 = document.getElementById("contenitore");
 
