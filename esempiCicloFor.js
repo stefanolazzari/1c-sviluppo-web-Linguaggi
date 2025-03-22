@@ -1,19 +1,9 @@
 
-
-
-
 for(let y = 0; y < 100; y++){
     console.log("Ora il valore di y é: " + y);
 }
 
 
-
-
-
-
-
-
-//ciclo for 
 for(let contatore = 0; contatore < 5;contatore++){
     console.log("Ha detto ciao per " + contatore + " volte!");
 }
@@ -38,18 +28,3 @@ for (let index = 0; index < 15; index++) {
     nuovoElemento.style.margin = "1%";
     contenitore2.appendChild(nuovoElemento);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
