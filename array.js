@@ -12,7 +12,11 @@ for (let index = 0; index < colori.length; index++) {
     nuovoParagrafo.textContent = elemento;
     nuovoParagrafo.style.backgroundColor = elemento;
     nuovoParagrafo.style.color = coloreTesto;
-    nuovoParagrafo.style.marginRight = index + "%";
+    nuovoParagrafo.style.marginRight = index * 5 + "%";
+    nuovoParagrafo.style.marginLeft = index * 5 + "%";
+
+    nuovoParagrafo.style.fontSize = (index+1)*10  + "px";
+
 
     contenitore.appendChild(nuovoParagrafo);
 }
