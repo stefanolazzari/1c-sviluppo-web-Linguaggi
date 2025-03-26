@@ -1,8 +1,28 @@
 let colori = ["red","black","white","green","yellow","pink"];
 
-let arrayImmagini = ["cammello.jpeg","giraffa.jpeg","gufo.jpeg","falco.jpeg"];
+let arrayImmagini = ["cammello.jpeg","giraffa.jpeg","gufo.jpeg","falco.jpeg","cammello.jpeg","giraffa.jpeg","gufo.jpeg","falco.jpeg"];
 
 let contenitore = document.getElementById("contenitore");
+let vociMenu = ["Home","About","Contatti","Shop"]
+
+let barraNavigazione = document.createElement("nav");
+barraNavigazione.id = "nav";
+barraNavigazione.style.backgroundColor = "aqua";
+barraNavigazione.style.padding = "2%";
+contenitore.appendChild(barraNavigazione);
+
+for (let index = 0; index < vociMenu.length; index++) {
+    const nuovaVoce = document.createElement("a");
+    nuovaVoce.textContent = vociMenu[index];
+    nuovaVoce.style.margin = "2%";
+    nuovaVoce.style.backgroundColor = "grey";
+    nuovaVoce.style.padding = "1%";
+    
+
+    barraNavigazione.appendChild(nuovaVoce);
+
+}
+
 
 
 for (let index = 0; index < colori.length; index++) {
@@ -32,6 +52,7 @@ for (let index = 0; index < arrayImmagini.length; index++) {
     nuovaImmagine.alt = arrayImmagini[index];
     nuovaImmagine.style.height = "200px";
     nuovaImmagine.style.width = "300px";
+    nuovaImmagine.style.margin = "1%";
     contenitore.appendChild(nuovaImmagine);
 }
 
