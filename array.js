@@ -1,6 +1,6 @@
 let colori = ["red","black","white","green","yellow","pink"];
 
-let arrayImmagini = ["cammello.jpeg","giraffa.jpeg","gufo.jpeg"];
+let arrayImmagini = ["cammello.jpeg","giraffa.jpeg","gufo.jpeg","falco.jpeg"];
 
 let contenitore = document.getElementById("contenitore");
 
@@ -30,6 +30,8 @@ for (let index = 0; index < arrayImmagini.length; index++) {
     const nuovaImmagine = document.createElement("img");
     nuovaImmagine.src = arrayImmagini[index];
     nuovaImmagine.alt = arrayImmagini[index];
+    nuovaImmagine.style.height = "200px";
+    nuovaImmagine.style.width = "300px";
     contenitore.appendChild(nuovaImmagine);
 }
 
