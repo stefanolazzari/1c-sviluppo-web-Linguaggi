@@ -40,7 +40,7 @@ for(let i = 0; i <  arrayValori.length; i++ ){
     if(arrayValori[i] == 90){
         console.log("la paura");
     }
-    
+  
     somma = somma + arrayValori[i];
     console.log(somma);
 }
