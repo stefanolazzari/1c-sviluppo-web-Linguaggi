@@ -1,16 +1,22 @@
 
-body { 
-    font-family: Arial, 
-    sans-serif; 
-    text-align: center; 
-    padding: 20px; 
-}
-#numero, #significato { 
-    font-size: 24px; 
-    margin-top: 20px; 
-    margin-bottom: 2%;
-}
-button { 
-    padding: 10px 20px; 
-    font-size: 18px; 
-}
+.verde-corsivo {
+    background-color: green;
+    padding: 1rem;
+    text-align: right;
+    font-style: italic;
+  }
+  
+  /* Padding grosso su schermi grandi (es. larghezza > 1024px) */
+  @media (min-width: 1024px) {
+    .verde-corsivo {
+      padding: 4rem;
+    }
+  }
+  
+
+  .grigio{
+    background-color: #c8c8c8;
+    color: #252525;
+    padding: 5% 20% 5% 20%;
+    text-align: justify;
+  }

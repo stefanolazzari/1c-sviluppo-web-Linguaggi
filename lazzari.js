@@ -28,6 +28,14 @@ function lazzariAggiungiTitolo(a){
 }
 
 
+function lazzariAmazzonia(){
+    document.body.className = "verde-corsivo";
+}
+
+function lazzariGrigi(){
+    document.body.className = "grigio";
+}
+
 
 
 
